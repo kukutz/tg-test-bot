@@ -1,0 +1,88 @@
+:root {
+    color-scheme: light dark;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--tg-theme-bg-color, #0f1117);
+    color: var(--tg-theme-text-color, #f5f6f8);
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.app__header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.app__content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.markdown {
+    line-height: 1.6;
+}
+
+.markdown pre {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.markdown table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+.markdown th,
+.markdown td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 8px;
+}
+
+.meta {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.app__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: var(--tg-theme-button-color, #2a8af6);
+    color: var(--tg-theme-button-text-color, #fff);
+}
+
+.btn--secondary {
+    background: transparent;
+    color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
